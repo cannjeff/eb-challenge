@@ -1,0 +1,26 @@
+@import "variables";
+
+html {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(to bottom, $bg-gray, white);
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@import "elements";
+@import "layout";
+@import "components";

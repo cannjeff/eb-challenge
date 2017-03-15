@@ -1,0 +1,55 @@
+.page-wrapper {
+  width: 890px;
+  margin: 0 auto;
+}
+
+.header-content{
+  padding: 30px 0;
+
+  .search-wrapper {
+    float: right;
+    position: relative;
+    #searchBox {
+      margin-top: 10px;
+      border: 0;
+      border-radius: 8px;
+      padding: 5px;
+    }
+    #searchImg {
+      position: absolute;
+      right: 6px;
+      top: 17px;
+    }
+  }
+}
+.content-wrapper {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 8px;
+
+  .content-main,
+  .content-aside {
+    float: left;
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+  .content-main {
+    width: 75%;
+    border-right: 1px solid $vertical-rule-color;
+
+    .bolden {
+      color: $text-red;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+  .content-aside {
+    width: 25%;
+  }
+
+  #ladyInRed {
+    position: absolute;
+    right: -237px;
+    bottom: 0px;
+  }
+}

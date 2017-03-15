@@ -1,0 +1,65 @@
+#accordion {
+  &.ui-accordion {
+    padding-top: 20px;
+  }
+  .ui-accordion-header {
+    background: linear-gradient(to bottom, white, $bg-gray);
+    padding: 15px;
+    border: 1px solid $vertical-rule-color;
+    margin: 0;
+    font-weight: normal;
+    color: $text-gray;
+
+    &.first {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    &.last:not(.ui-state-active) {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+
+    .arrow {
+      transition: 300ms;
+      background-image: url("../images/arrow.png");
+      background-repeat: no-repeat;
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      float: right;
+      margin-top: 4px;
+    }
+    &.ui-state-active {
+      font-weight: bold;
+
+      .arrow {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .ui-accordion-content {
+    border: 1px solid $vertical-rule-color;
+    padding: 20px;
+
+    .spec-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .spec-list-label {
+        color: $text-gray;
+      }
+    }
+    .check-mark {
+      background-image: url("../images/checked.png");
+      height: 10px;
+      width: 12px;
+      display: inline-block;
+    }
+
+    & > p {
+      margin: 0;
+    }
+  }
+}

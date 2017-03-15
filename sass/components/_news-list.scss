@@ -1,0 +1,13 @@
+.news-list {
+  list-style: none;
+  padding: 0;
+
+  .news-item-title,
+  .news-item-content {
+    font-size: 12px;
+  }
+  .news-item-title {
+    color: $text-red;
+    font-weight: bold;
+  }
+}
